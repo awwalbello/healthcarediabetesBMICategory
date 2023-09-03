@@ -13,6 +13,11 @@ SET BMI_Category =
 SELECT * FROM HealthcareDiabetes1
 WHERE BMI_Category = 'Critical Medical Emergency'
 
+--Number of patients in need of immediate attention
 SELECT COUNT(*) UnderweightCount
 FROM HealthcareDiabetes1
 WHERE BMI_Category = 'Critical Medical Emergency'
+
+SELECT pregnancies, AVG(age) AS average_age
+FROM healthcarediabetes1
+GROUP BY Pregnancies;
